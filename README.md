@@ -115,7 +115,13 @@ This application simulates the process of ordering coffee. The **Order Service**
 ---
 
 ### **How to run the services**  
-1. 
+1. python3 -m venv venv
+2. source venv/bin/activate
+3. pip install Flask
+4. pip install Requests
+5. pip freeze > requirements.txt
+6. python app.py
+
 
 
 ### **Technology Stack**
