@@ -120,7 +120,8 @@ This application simulates the process of ordering coffee. The **Order Service**
 3. pip install Flask
 4. pip install Requests
 5. pip freeze > requirements.txt
-6. python app.py
+6. Set / Export required variables in environment
+7. python app.py
 
 
 

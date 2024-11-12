@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Launch Flask App",
+            "program": "${workspaceFolder}/${input:programPath}",
+            "envFile": "${workspaceFolder}/.env",
+            "args": [],
+            "jinja": true,
+            "justMyCode": true,
+            "subProcess": true,
+            "console": "integratedTerminal"
+        }
+    ],
+    "inputs": [
+        {
+            "type": "promptString",
+            "id": "programPath",
+            "description": "Path to the Flask application file (e.g., app.py)"
+        }
+    ]
+}
