@@ -120,9 +120,9 @@ This application simulates the process of ordering coffee. The **Order Service**
 3. pip install Flask
 4. pip install Requests
 5. pip freeze > requirements.txt
-6. Set / Export required variables in environment
-7. python inventory_app.py
-7. python order_app.py
+6. Set / Export required variables in environment ( Use env file or set / export variables )
+7. python -m inventory_service.inventory_app
+8. python -m order_service.order_app ( In separate terminal )
 
 
 

@@ -1,5 +1,5 @@
 from flask import Flask
-from order_service.routes import order_bp
+from .routes import order_bp
 
 def create_order_app():
     app = Flask(__name__)
