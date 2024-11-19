@@ -121,7 +121,8 @@ This application simulates the process of ordering coffee. The **Order Service**
 4. pip install Requests
 5. pip freeze > requirements.txt
 6. Set / Export required variables in environment
-7. python app.py
+7. python inventory_app.py
+7. python order_app.py
 
 
 
