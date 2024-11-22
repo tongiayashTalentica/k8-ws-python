@@ -121,8 +121,8 @@ This application simulates the process of ordering coffee. The **Order Service**
 4. pip install Requests
 5. pip freeze > requirements.txt
 6. Set / Export required variables in environment ( Use env file or set / export variables )
-7. python -m inventory_service.inventory_app
-8. python -m order_service.order_app ( In separate terminal )
+7. cd inventory_service AND then python inventory_app.py
+8. In separate terminal : cd order_service and python order_app.py
 
 
 

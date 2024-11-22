@@ -1,5 +1,5 @@
 from flask import Flask
-from .routes import inventory_bp
+from routes import inventory_bp
 
 def create_inventory_app():
     app = Flask(__name__)

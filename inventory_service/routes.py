@@ -1,5 +1,5 @@
 from flask import Blueprint
-from inventory_service.service import get_stock, use_ingredient
+from service import get_stock, use_ingredient
 
 inventory_bp = Blueprint('inventory', __name__)
 

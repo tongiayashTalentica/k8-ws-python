@@ -1,5 +1,5 @@
 from flask import Blueprint, request
-from order_service.service import place_order
+from service import place_order
 
 order_bp = Blueprint('order', __name__)
 
