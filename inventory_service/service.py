@@ -2,10 +2,10 @@ import os
 from flask import jsonify, request
 
 # Read environment variables at the start and store them in memory
-ESPRESSO_SHOT_QUANTITY = int(os.getenv('ESPRESSO_SHOT_QUANTITY', 0))
-MILK_QUANTITY = int(os.getenv('MILK_QUANTITY', 0))
-HOT_WATER_QUANTITY = int(os.getenv('HOT_WATER_QUANTITY', 0))
-MILK_FOAM_QUANTITY = int(os.getenv('MILK_FOAM_QUANTITY', 0))
+ESPRESSO_SHOT_QUANTITY = int(os.getenv('ESPRESSO_SHOT_QUANTITY', 10))
+MILK_QUANTITY = int(os.getenv('MILK_QUANTITY', 1000))
+HOT_WATER_QUANTITY = int(os.getenv('HOT_WATER_QUANTITY', 99999999))
+MILK_FOAM_QUANTITY = int(os.getenv('MILK_FOAM_QUANTITY', 500))
 
 # Initialize the stock dictionary
 current_stock = {
