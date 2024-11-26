@@ -17,7 +17,7 @@ def get_ingredient(coffee_type, quantity):
     return {k: v * quantity for k, v in ingredients.items()}
 
 def place_order(coffee_type, quantity):
-    inventory_url = "http://localhost:8082"
+    inventory_url = os.getenv('INVENTORY_SERVICE_URL', "http://localhost:8082")
     ingredients = get_ingredient(coffee_type, quantity)
     response = requests.post(f"{inventory_url}/inventory/used", json=ingredients)
     available = response.json().get("available", False)

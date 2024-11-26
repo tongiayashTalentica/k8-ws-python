@@ -8,7 +8,7 @@ def create_inventory_app():
 
 def run_inventory_app():
     app = create_inventory_app()
-    app.run(port=8082)
+    app.run(host='0.0.0.0', port=8082)
 
 if __name__ == '__main__':
     run_inventory_app()
