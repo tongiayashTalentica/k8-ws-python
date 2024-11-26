@@ -121,8 +121,14 @@ This application simulates the process of ordering coffee. The **Order Service**
 4. pip install Requests
 5. pip freeze > requirements.txt
 6. Set / Export required variables in environment ( Use env file or set / export variables )
+Positive numerical values can be set for the following environment variables to override default values :
+ESPRESSO_SHOT_QUANTITY
+MILK_QUANTITY
+HOT_WATER_QUANTITY
+MILK_FOAM_QUANTITY
 7. cd inventory_service AND then python inventory_app.py
-8. In separate terminal : cd order_service and python order_app.py
+8. Inventory service url should be set in INVENTORY_SERVICE_URL environment variable. Default value is http://localhost:8082
+9. In separate terminal : cd order_service and python order_app.py
 
 
 
