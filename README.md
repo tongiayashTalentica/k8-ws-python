@@ -1,6 +1,3 @@
-**K8 Coffee Shop** :
-
----
 
 ## **K8 Coffee Shop Overview**  
 **Goal:**  
@@ -23,17 +20,21 @@ This application simulates the process of ordering coffee. The **Order Service**
    
 
    **Example Request:**
-   ```json
-   GET /order/place?coffeeType=cappuccino&quantity=1
    ```
 
+   GET /order/place?coffeeType=cappuccino&quantity=1
+
+    ```
+
    **Example Response:**
-   ```json
+   
+   ```
    {
     "coffeeType": "cappuccino",
     "quantity": 1,
     "status": "Confirmed"
-  }
+   }
+
    ```
 
 ---
@@ -51,7 +52,9 @@ This application simulates the process of ordering coffee. The **Order Service**
 
 
    **Example Response (GET /inventory/stock):**
-   ```json
+   
+```
+
    {
     "espressoShot": {
       "name": "Espresso Shot",
@@ -70,20 +73,25 @@ This application simulates the process of ordering coffee. The **Order Service**
       "quantity": 500
     }
   }
-   ```
+```
 
    **Example Request (POST /inventory/used):**
+
    ```json
+
    {
      "espressoShot": 1,
      "milk": 200,
      "milkFoam" : 50
    }
+
    ```
 
    **Example Response:**
    ```json
+  
    true/false
+
    ```
 
 ---
@@ -114,26 +122,3 @@ This application simulates the process of ordering coffee. The **Order Service**
 
 ---
 
-### **How to run the services**  
-1. python3 -m venv venv
-2. source venv/bin/activate
-3. pip install Flask
-4. pip install Requests
-5. pip freeze > requirements.txt
-6. Set / Export required variables in environment ( Use env file or set / export variables )
-Positive numerical values can be set for the following environment variables to override default values :
-ESPRESSO_SHOT_QUANTITY
-MILK_QUANTITY
-HOT_WATER_QUANTITY
-MILK_FOAM_QUANTITY
-7. cd inventory_service AND then python inventory_app.py
-8. Inventory service url should be set in INVENTORY_SERVICE_URL environment variable. Default value is http://localhost:8082
-9. In separate terminal : cd order_service and python order_app.py
-
-
-
-### **Technology Stack**
-- **Backend:**  
-  - Python (Flask).
-- **API Communication:**  
-  - REST or gRPC for service-to-service communication.
